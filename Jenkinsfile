@@ -14,6 +14,7 @@ pipeline {
         }
       }
     stage('stage2') {
-      echo "Hello raman"
+       echo "Hello raman"
+    }
   }
 }
