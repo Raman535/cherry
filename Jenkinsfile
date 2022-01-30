@@ -5,7 +5,7 @@ pipeline {
     stage('hello') {
       steps {
         echo 'hi raman'
-        sample 'calling shared library: hello raman'
+        sample "$admin"
       }
     }
 
