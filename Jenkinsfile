@@ -5,7 +5,7 @@ pipeline {
     stage('hello') {
        when {
         expression {
-                  (false = sample "$admin")
+                  ('false' == sample "$admin")
         }
       }
       steps {
