@@ -5,11 +5,12 @@ pipeline {
     stage('hello') {
        when {
         expression {
-                  sample "$admin"
+                  !(sample "$admin")
         }
       }
       steps {
         echo 'Please check the branch name'
+        error "This pipeline stops here!"
         }
       }
   }
