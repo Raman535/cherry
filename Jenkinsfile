@@ -3,11 +3,13 @@ pipeline {
   agent any
   stages {
     stage('hello') {
+       when {
+        expression {
+                  sample "$admin"
+        }
+      }
       steps {
-        echo 'hi raman'
-        result = sample "$admin"
-        if (!result) {
-           error("Invalid branch name: ${admin}")
+        echo 'Please check the branch name'
         }
       }
     }
