@@ -12,7 +12,5 @@ pipeline {
         echo 'Please check the branch name'
         }
       }
-    }
-
   }
 }
