@@ -5,7 +5,7 @@ pipeline {
     stage('hello') {
        when {
         expression {
-                  return !(sample "$admin")
+                  sample "$admin"
         }
       }
       steps {
