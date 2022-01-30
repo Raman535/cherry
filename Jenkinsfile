@@ -9,7 +9,7 @@ pipeline {
         }
       }
       steps {
-        echo "branch name $admin does not adhere to /feature\/[0-9]+\.[0-9]+\.[0-9]+/'.... hence exiting"
+        echo "branch name $admin does not adhere to .... hence exiting"
         error "This pipeline stops here!"
         }
       }
