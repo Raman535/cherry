@@ -3,8 +3,6 @@ pipeline {
   agent any
   stages {
     stage('hello') {
-      output = sample "$admin"
-      echo "$output"
        when {
         expression {
                   sample "$admin"
