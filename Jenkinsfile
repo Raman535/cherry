@@ -5,8 +5,8 @@ pipeline {
     stage('hello') {
       steps {
         echo 'hi raman'
-        return = sample "$admin"
-        if (!return) {
+        result = sample "$admin"
+        if (!result) {
            error("Invalid branch name: ${admin}")
         }
       }
