@@ -2,7 +2,7 @@
 pipeline {
   agent any
   stages {
-    stage('hello') {
+    stage('stage1') {
        when {
         expression {
                   sample "$admin"
@@ -13,5 +13,7 @@ pipeline {
         error "This pipeline stops here!"
         }
       }
+    stage('stage2') {
+      echo "Hello raman"
   }
 }
